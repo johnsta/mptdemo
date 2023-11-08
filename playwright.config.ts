@@ -23,14 +23,13 @@ export default defineConfig({
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
     },
-
     {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      name: 'Pixel 5',
+      use: { ...devices['Pixel 5'] },
     },
     // {
-    //   name: 'Pixel 5',
-    //   use: { ...devices['Pixel 5'] },
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
     // },
     // {
     //   name: 'iPhone 12',

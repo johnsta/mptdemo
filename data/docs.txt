@@ -1,0 +1,28 @@
+Should open doc welcome page
+Should open doc welcome page for logged-in user
+Should open doc welcome page for anonymous user
+Should open doc welcome page with different languages
+Should open doc welcome page with slow network
+Should open doc welcome page with JavaScript disabled
+Should open doc welcome page with cookies disabled
+Should find topic
+Should find topic with invalid search query
+Should find topic with special characters in search query
+Should find topic with multiple search results
+Should find topic with no search results
+Should open topic for logged-in user
+Should open topic for anonymous user
+Should open topic with different languages
+Should open topic with slow network
+Should open topic with JavaScript disabled
+Should open topic with cookies disabled
+Should open topic with invalid URL
+Should open topic with invalid anchor
+Should open topic with deep linking
+Should open topic with scroll position preservation
+Should open topic with collapsed sections
+Should open topic with expanded sections
+Should open topic with mixed section states
+Should open topic with external links
+Should open topic with downloadable files
+Should open topic with code examples

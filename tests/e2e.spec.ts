@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { navigateToPage } from './utils';
 
 // test('end-to-end scenario', async ({ page }) => {
 //   await page.goto('https://app-web-nw4xbiykoskx2.azurewebsites.net/');

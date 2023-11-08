@@ -2,7 +2,7 @@ import fs from 'fs';
 import { test, expect } from '@playwright/test';
 import { navigateToPage } from './utils';
 
-const testFilename = 'user-reviews';
+const testFilename = 'reviews';
 const testNames = fs.readFileSync('data/' + testFilename + '.txt', 'utf-8').split('\n').map(name => name.trim()).filter(Boolean);
 
 test.describe(testFilename, () => {

@@ -28,7 +28,7 @@ jobs:
         PLAYWRIGHT_SERVICE_ACCESS_TOKEN: ${{secrets.PLAYWRIGHT_SERVICE_ACCESS_TOKEN}}
         PLAYWRIGHT_SERVICE_URL: wss://eastus.api.playwright.microsoft.com/api/authorize/connectSession
         PLAYWRIGHT_SERVICE_RUN_ID: ${{ env.COMMIT_MESSAGE }}-${{ github.run_attempt }}
-      run: npx playwright test -c playwright.service.config.ts --workers=30
+      run: npx playwright test -c playwright.service.config.ts --workers=20
     - uses: actions/upload-artifact@v3
       if: always()
       with:

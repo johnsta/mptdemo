@@ -8,7 +8,7 @@ on:
 jobs:
   test:
     timeout-minutes: 60
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest-4-cores
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
@@ -28,7 +28,7 @@ jobs:
         PLAYWRIGHT_SERVICE_ACCESS_TOKEN: ${{secrets.PLAYWRIGHT_SERVICE_ACCESS_TOKEN}}
         PLAYWRIGHT_SERVICE_URL: wss://eastus.api.playwright.microsoft.com/api/authorize/connectSession
         PLAYWRIGHT_SERVICE_RUN_ID: ${{ env.COMMIT_MESSAGE }}-${{ github.run_attempt }}
-      run: npx playwright test -c playwright.service.config.ts --workers=20
+      run: npx playwright test -c playwright.service.config.ts --workers=50
     - uses: actions/upload-artifact@v3
       if: always()
       with:
